@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p style="display: inline-block; padding: 2px; margin-bottom: 10px; border: 1px solid #000000;">教師ルール入力インターフェース</p>
+        <div id="form_option" style="padding: 2px; margin-bottom: 10px; border: 1px solid #000000;">
+            <div style="display:inline-block;">
+                <div>生徒の様子：<input type="text" name=""></div>
+                <div>例文：<input type="text" name=""></div>
+                <div>構文解析結果：</div>
+                <div>正答パターン：<input type="checkbox" name=""><input type="text" name=""></div>
+                <div>単語正誤：<input type="checkbox" name="">
+                    <select name="">
+                        <option v-for="item in vaccurate" value="">{{item}}</option>
+                    </select>
+                    <input type="text" name="" style="width:50px;">%正しかったら</div>
+                <div>教師の言動：<input type="text" name=""></div>
+            </div>
+            <div style="display:inline-block;">
+                <br>
+                <div>音声的特徴：
+                    <input type="checkbox" name="">
+                    <select name="">
+                        <option v-for="item in pfeatures" value="">{{item}}</option>
+                    </select>
+                </div>
+                <div>画像的特徴：
+                    <input type="checkbox" name="">
+                    <select name="">
+                        <option v-for="item in ifeatures" value="">{{item}}</option>
+                    </select>
+                </div>
+                <div>映像的特徴：
+                    <input type="checkbox" name="">
+                    <select name="">
+                        <option v-for="item in vfeatures" value="">{{item}}</option>
+                    </select>
+                </div>
+                <br>
+                <div>ロボットの動作：
+                    <select name="">
+                        <option v-for="item in rmovement" value="">{{item}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!--↑開発バージョンのため変える
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    -->
+    <script src="js/read_rules_from_json.js"></script>
+</html>
