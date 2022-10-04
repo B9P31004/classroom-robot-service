@@ -4,16 +4,39 @@
             "先頭から"
         ],
         "phonetic_features":[
-            "無言が続く"
+            {"voR_id":"voiceRecognision_id_1","feature":"名詞と固有名詞の判定"},
+            {"voR_id":"voiceRecognision_id_2","feature":"文の途中で間が空く"},
+            {"voR_id":"voiceRecognision_id_3","feature":"発音までに時間がかかる"},
+            {"voR_id":"voiceRecognision_id_4","feature":"「あ」「ん」などの言葉を発する"},
+            {"voR_id":"voiceRecognision_id_5","feature":"単語判定"},
+            {"voR_id":"voiceRecognision_id_6","feature":"回答判定"},
+            {"voR_id":"voiceRecognision_id_7","feature":"同じことを繰り返す"},
+            {"voR_id":"voiceRecognision_id_8","feature":"文章をゆっくり発音"},
+            {"voR_id":"voiceRecognision_id_9","feature":"単語を区切り区切り発音"},
+            {"voR_id":"voiceRecognision_id_10","feature":"日英判定"},
+            {"voR_id":"voiceRecognision_id_11","feature":"文章の後に間が空く"}
         ],
         "image_features":[
-            "下を向いている"
+            {"imR_id":"imageRecognision_id_1","feature":"手で頭を抱える"},
+            {"imR_id":"imageRecognision_id_2","feature":"口を開く"},
+            {"imR_id":"imageRecognision_id_3","feature":"目線が上に向く"},
+            {"imR_id":"imageRecognision_id_4","feature":"紙を見る"}
         ],
         "visual_features":[
-            "落ち着かない"
+            {"viR_id":"videoRecognision_id_1","feature":"目線が定まらない"},
+            {"viR_id":"videoRecognision_id_2","feature":"頭が揺れる"},
+            {"viR_id":"videoRecognision_id_3","feature":"目を見開く"},
+            {"viR_id":"videoRecognision_id_4","feature":"口元が上がる"},
+            {"viR_id":"videoRecognision_id_5","feature":"頭が上下する"},
+            {"viR_id":"videoRecognision_id_6","feature":"体が揺れる"},
+            {"viR_id":"videoRecognision_id_7","feature":"瞬きが多い"},
+            {"viR_id":"videoRecognision_id_8","feature":"手が動く"},
+            {"viR_id":"videoRecognision_id_9","feature":"単語ごとに発音身振り付き"},
+            {"viR_id":"videoRecognision_id_10","feature":"固まる"},
+            {"viR_id":"videoRecognision_id_11","feature":"落ち着きがない"}
         ],
         "robot_movement":[
-            "評価を返す"
+            {"roM_id":"robot_Movement_id_1","action":"評価を返す"}
         ]
     }
 }

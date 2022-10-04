@@ -1,0 +1,19 @@
+{
+    "rules":{
+        "vocabrary_detarmination_accurate":[
+            "先頭から"
+        ],
+        "phonetic_features":[
+            "無言が続く"
+        ],
+        "image_features":[
+            "下を向いている"
+        ],
+        "visual_features":[
+            "落ち着かない"
+        ],
+        "robot_movement":[
+            "評価を返す"
+        ]
+    }
+}

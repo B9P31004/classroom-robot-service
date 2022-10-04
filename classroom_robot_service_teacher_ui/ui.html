@@ -23,25 +23,25 @@
                 <div>音声的特徴：
                     <input type="checkbox" name="">
                     <select name="">
-                        <option v-for="item in pfeatures" value="">{{item}}</option>
+                        <option v-for="item in pfeatures" v-bind:value="item.voR_id">{{item.feature}}</option>
                     </select>
                 </div>
                 <div>画像的特徴：
                     <input type="checkbox" name="">
                     <select name="">
-                        <option v-for="item in ifeatures" value="">{{item}}</option>
+                        <option v-for="item in ifeatures" v-bind:value="item.imR_id">{{item.feature}}</option>
                     </select>
                 </div>
                 <div>映像的特徴：
                     <input type="checkbox" name="">
                     <select name="">
-                        <option v-for="item in vfeatures" value="">{{item}}</option>
+                        <option v-for="item in vfeatures" v-bind:value="item.viR_id">{{item.feature}}</option>
                     </select>
                 </div>
                 <br>
                 <div>ロボットの動作：
                     <select name="">
-                        <option v-for="item in rmovement" value="">{{item}}</option>
+                        <option v-for="item in rmovement" v-bind:value="item.roM_id">{{item.action}}</option>
                     </select>
                 </div>
             </div>

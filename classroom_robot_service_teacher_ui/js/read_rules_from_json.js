@@ -1,4 +1,5 @@
 var url='selected_rules.json';
+console.log("test");
 var app_read_rules_json = new Vue({
     el:"#form_option",
     data: {
