@@ -143,7 +143,6 @@ var create_form = new Vue({
             else if(this.word_accurancy_checkbox_check){
                 modified_percent=convert_half_number(this.percent);
                 modified_percent=Number(modified_percent)
-                console.log(modified_percent)
                 if(isNaN(modified_percent)){
                     this.form_post_flag=false
                     this.percent_error="<p>■数値で入力してください</p>"
