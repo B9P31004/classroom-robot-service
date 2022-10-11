@@ -10,12 +10,12 @@ classroom_robot_service_teacher_ui
 │   │   └──・・・省略
 │   └── main_create_form.js ■（ユーザインターフェースからJsonを出力するまでの機能を持つJavaScript）
 ├── output_json
-│   ├── output_rules.json ■（（詳細版ルールベース）
-│   └── simplified_output_rules.json ■（（簡易版ルールベース）
+│   ├── output_rules.json ■（詳細版ルールベース）
+│   └── simplified_output_rules.json ■（簡易版ルールベース）
 ├── php
-│   ├── simplified_write_json_from_form.php ■（(簡易版ルールベースを出力するphp)
-│   └── write_json_from_form.php ■（（詳細版ルールベースを出力するphp）
-├── selected_rules.json ■（(ルール一覧)
+│   ├── simplified_write_json_from_form.php ■（簡易版ルールベースを出力するphp)
+│   └── write_json_from_form.php ■（詳細版ルールベースを出力するphp）
+├── selected_rules.json ■（ルール一覧)
 └── ui.html（ユーザインターフェース）
 ```
 ---
@@ -36,7 +36,7 @@ classroom_robot_service_teacher_ui
 2. python仮想環境を作成しDjango、nltk、django_cors_headersをインストール
 3. 仮想環境の名前/lib/python（バージョン)/site-packages内にpython-packages_for_api内の３つのフォルダを格納　
 4. デフォルト設定であればXAMPPサーバ、Django開発用サーバを立てる
-5. ドメイン名とパス（ローカル環境でデフォルトなら<notextile>http://localhost:8080</notextile>/classroom_robot_service_teacher_ui/ui.html)で動作を確認
+5. ドメイン名とパス（ローカル環境でデフォルトなら<notextile>http:</notextile>//localhost:8080/classroom_robot_service_teacher_ui/ui.html)で動作を確認
 ## 参考
 - pythonによるopennlpの利用  
 →https://github.com/paudan/opennlp_python
