@@ -13,5 +13,4 @@ def opennlp_api(request):
         path_to_model='/opennlp_models/en-pos-maxent.bin'
         tt = OpenNLPTagger(language='en',path_to_bin=path_to_bin,path_to_model=path_to_model)
         sentence = tt.tag(phrase)
-        print(sentence)
     return HttpResponse(sentence)
