@@ -2,7 +2,7 @@
 英語教育支援知的ロボットサービス
 ## ディレクトリ
 ```
-classroom-robot-service_ui
+classroom_robot_service_ui
 ├── css
 │   └── main.css
 ├── js
