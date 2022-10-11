@@ -1,0 +1,180 @@
+{
+    "rules": {
+        "rule_id_1": {
+            "basic_information": {
+                "student_situation": "落ち着きがない",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')",
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": true,
+                "order": "先頭から",
+                "percent": 75,
+                "teacher_behavior": "素晴らしい"
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": {
+                    "boolean": true,
+                    "feature": "動詞時制の不一致",
+                    "type": "文法の誤り"
+                },
+                "voiceRecognision_id_2": {
+                    "boolean": false,
+                    "feature": "固有名詞の数の不一致",
+                    "type": "文法の誤り"
+                },
+                "voiceRecognision_id_3": {
+                    "boolean": true,
+                    "feature": "名詞の数の不一致",
+                    "type": "文法の誤り"
+                },
+                "voiceRecognision_id_4": {
+                    "boolean": true,
+                    "feature": "単語抜け判定",
+                    "type": "文法の誤り"
+                },
+                "voiceRecognision_id_5": {
+                    "boolean": false,
+                    "feature": "文章のみの判定",
+                    "type": "文法の誤り"
+                },
+                "voiceRecognision_id_101": {
+                    "boolean": false,
+                    "feature": "固有名詞と名詞違い",
+                    "type": "語彙の誤り"
+                },
+                "voiceRecognision_id_102": {
+                    "boolean": false,
+                    "feature": "（一致すべき部分の）単語違い",
+                    "type": "語彙の誤り"
+                },
+                "voiceRecognision_id_103": {
+                    "boolean": false,
+                    "feature": "POSタグ違い",
+                    "type": "語彙の誤り"
+                },
+                "voiceRecognision_id_104": {
+                    "boolean": false,
+                    "feature": "日本語が検出された",
+                    "type": "語彙の誤り"
+                },
+                "voiceRecognision_id_201": {
+                    "boolean": false,
+                    "feature": "間が空いている",
+                    "type": "発生の誤り"
+                },
+                "voiceRecognision_id_202": {
+                    "boolean": true,
+                    "feature": "言い淀みが含まれる",
+                    "type": "発生の誤り"
+                },
+                "voiceRecognision_id_203": {
+                    "boolean": false,
+                    "feature": "音声から認識される単語なし",
+                    "type": "発生の誤り"
+                },
+                "voiceRecognision_id_204": {
+                    "boolean": false,
+                    "feature": "余計な単語が正解解答の後に入る",
+                    "type": "発生の誤り"
+                }
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": {
+                    "boolean": false,
+                    "feature": "動作の変化がない",
+                    "type": "顔の動作"
+                },
+                "imageRecognision_id_2": {
+                    "boolean": true,
+                    "feature": "首を傾げる",
+                    "type": "顔の動作"
+                },
+                "imageRecognision_id_3": {
+                    "boolean": true,
+                    "feature": "頭が揺れる",
+                    "type": "顔の動作"
+                },
+                "imageRecognision_id_4": {
+                    "boolean": true,
+                    "feature": "常に動いている",
+                    "type": "顔の動作"
+                },
+                "imageRecognision_id_101": {
+                    "boolean": false,
+                    "feature": "正面を向いている",
+                    "type": "顔の向き"
+                },
+                "imageRecognision_id_102": {
+                    "boolean": true,
+                    "feature": "正面を向いていない",
+                    "type": "顔の向き"
+                }
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": {
+                    "boolean": true,
+                    "feature": "目線が定まらない",
+                    "type": ""
+                },
+                "videoRecognision_id_2": {
+                    "boolean": true,
+                    "feature": "頭が揺れる",
+                    "type": ""
+                },
+                "videoRecognision_id_3": {
+                    "boolean": false,
+                    "feature": "目を見開く",
+                    "type": ""
+                },
+                "videoRecognision_id_4": {
+                    "boolean": false,
+                    "feature": "口元が上がる",
+                    "type": ""
+                },
+                "videoRecognision_id_5": {
+                    "boolean": true,
+                    "feature": "頭が上下する",
+                    "type": ""
+                },
+                "videoRecognision_id_6": {
+                    "boolean": true,
+                    "feature": "体が揺れる",
+                    "type": ""
+                },
+                "videoRecognision_id_7": {
+                    "boolean": true,
+                    "feature": "瞬きが多い",
+                    "type": ""
+                },
+                "videoRecognision_id_8": {
+                    "boolean": true,
+                    "feature": "手が動く",
+                    "type": ""
+                },
+                "videoRecognision_id_9": {
+                    "boolean": true,
+                    "feature": "単語ごとに発音身振り付き",
+                    "type": ""
+                },
+                "videoRecognision_id_10": {
+                    "boolean": false,
+                    "feature": "固まる",
+                    "type": ""
+                },
+                "videoRecognision_id_11": {
+                    "boolean": true,
+                    "feature": "落ち着きがない",
+                    "type": ""
+                }
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_1",
+                "action": "評価を返す",
+                "type": ""
+            }
+        }
+    }
+}
