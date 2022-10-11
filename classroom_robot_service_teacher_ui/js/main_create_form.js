@@ -201,8 +201,7 @@ var create_form = new Vue({
         send_to_api:function(){
             /* { 構文解析APIに接続し結果を受け取る */
             axios.post(api_url,data=this.example_sentence).then(response => {
-                this.parsing_result=response
-                console.log(response)
+                this.parsing_result=response.data
             })
             /* 構文解析APIに接続し結果を受け取る } */
         }
