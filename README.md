@@ -38,5 +38,5 @@ classroom_robot_service_teacher_ui
 4. デフォルト設定であればXAMPPサーバ、Django開発用サーバを立てる
 5. ドメイン名とパス（ローカル環境でデフォルトなら<notextile>http://localhost:8080</notextile>/classroom_robot_service_teacher_ui/ui.html)で動作を確認
 ## 参考
-pythonによるopennlpの利用
-https://github.com/paudan/opennlp_python
+- pythonによるopennlpの利用  
+→https://github.com/paudan/opennlp_python
