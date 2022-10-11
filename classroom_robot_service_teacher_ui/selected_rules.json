@@ -1,19 +1,48 @@
 {
     "rules":{
-        "vocabrary_detarmination_accurate":[
-            "先頭から"
+        "word_accurancy":[
+            {"woA_id":"wordAccurancy_id_1","order":"先頭から"},
+            {"woA_id":"wordAccurancy_id_2","order":"後ろから"}
         ],
         "phonetic_features":[
-            "無言が続く"
+            {"voR_id":"voiceRecognision_id_1","feature":"動詞時制の不一致","type":"文法の誤り"},
+            {"voR_id":"voiceRecognision_id_2","feature":"固有名詞の数の不一致","type":"文法の誤り"},
+            {"voR_id":"voiceRecognision_id_3","feature":"名詞の数の不一致","type":"文法の誤り"},
+            {"voR_id":"voiceRecognision_id_4","feature":"単語抜け判定","type":"文法の誤り"},
+            {"voR_id":"voiceRecognision_id_5","feature":"文章のみの判定","type":"文法の誤り"},
+            {"voR_id":"voiceRecognision_id_101","feature":"固有名詞と名詞違い","type":"語彙の誤り"},
+            {"voR_id":"voiceRecognision_id_102","feature":"（一致すべき部分の）単語違い","type":"語彙の誤り"},
+            {"voR_id":"voiceRecognision_id_103","feature":"POSタグ違い","type":"語彙の誤り"},
+            {"voR_id":"voiceRecognision_id_104","feature":"日本語が検出された","type":"語彙の誤り"},
+            {"voR_id":"voiceRecognision_id_201","feature":"間が空いている","type":"発生の誤り"},
+            {"voR_id":"voiceRecognision_id_202","feature":"言い淀みが含まれる","type":"発生の誤り"},
+            {"voR_id":"voiceRecognision_id_203","feature":"音声から認識される単語なし","type":"発生の誤り"},
+            {"voR_id":"voiceRecognision_id_204","feature":"余計な単語が正解解答の後に入る","type":"発生の誤り"}
         ],
         "image_features":[
-            "下を向いている"
+            {"imR_id":"imageRecognision_id_1","feature":"動作の変化がない","type":"顔の動作"},
+            {"imR_id":"imageRecognision_id_2","feature":"首を傾げる","type":"顔の動作"},
+            {"imR_id":"imageRecognision_id_3","feature":"頭が揺れる","type":"顔の動作"},
+            {"imR_id":"imageRecognision_id_4","feature":"常に動いている","type":"顔の動作"},
+            {"imR_id":"imageRecognision_id_101","feature":"正面を向いている","type":"顔の向き"},
+            {"imR_id":"imageRecognision_id_102","feature":"正面を向いていない","type":"顔の向き"}
         ],
         "visual_features":[
-            "落ち着かない"
+            {"viR_id":"videoRecognision_id_1","feature":"目線が定まらない","type":""},
+            {"viR_id":"videoRecognision_id_2","feature":"頭が揺れる","type":""},
+            {"viR_id":"videoRecognision_id_3","feature":"目を見開く","type":""},
+            {"viR_id":"videoRecognision_id_4","feature":"口元が上がる","type":""},
+            {"viR_id":"videoRecognision_id_5","feature":"頭が上下する","type":""},
+            {"viR_id":"videoRecognision_id_6","feature":"体が揺れる","type":""},
+            {"viR_id":"videoRecognision_id_7","feature":"瞬きが多い","type":""},
+            {"viR_id":"videoRecognision_id_8","feature":"手が動く","type":""},
+            {"viR_id":"videoRecognision_id_9","feature":"単語ごとに発音身振り付き","type":""},
+            {"viR_id":"videoRecognision_id_10","feature":"固まる","type":""},
+            {"viR_id":"videoRecognision_id_11","feature":"落ち着きがない","type":""}
         ],
         "robot_movement":[
-            "評価を返す"
+            {"roM_id":"robot_Movement_id_1","action":"評価を返す","type":""},
+            {"roM_id":"robot_Movement_id_2","action":"右手を挙げる","type":""}
         ]
     }
 }

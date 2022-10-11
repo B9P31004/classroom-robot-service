@@ -2,55 +2,65 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
     </head>
     <body>
         <p style="display: inline-block; padding: 2px; margin-bottom: 10px; border: 1px solid #000000;">教師ルール入力インターフェース</p>
         <div id="form_option" style="padding: 2px; margin-bottom: 10px; border: 1px solid #000000;">
             <div style="display:inline-block;">
-                <div>生徒の様子：<input type="text" name=""></div>
-                <div>例文：<input type="text" name=""></div>
-                <div>構文解析結果：</div>
-                <div>正答パターン：<input type="checkbox" name=""><input type="text" name=""></div>
-                <div>単語正誤：<input type="checkbox" name="">
-                    <select name="">
-                        <option v-for="item in vaccurate" value="">{{item}}</option>
+                <div>生徒の様子：<input type="text" name="" v-model="student_situation"></div>
+                <div name="error_text" v-html="student_situation_error"></div>
+                <div>例文：<input type="text" name="" v-on:change="send_to_api" v-model="example_sentence"></div>
+                <div name="error_text" v-html="example_sentence_error"></div>
+                <div>構文解析結果：<input type="text" name="" v-model="parsing_result" readonly></div>
+                <div>正答パターン：<input type="checkbox" name="" v-model="correct_answer_pattern_checkbox_check"><input type="text" name="" v-model="correct_answer_pattern"></div>
+                <div name="error_text" v-html="correct_answer_pattern_error"></div>
+                <div>単語正誤：<input name="woA_s" type="checkbox" v-bind:id="word_accurancy_checkbox_id" v-model="word_accurancy_checkbox_check">
+                    <select name="woA_s" v-on:change="select_option">
+                        <option v-for="item in word_accurancy" v-bind:value="JSON.stringify(item)">{{item.order}}</option>
                     </select>
-                    <input type="text" name="" style="width:50px;">%正しかったら</div>
-                <div>教師の言動：<input type="text" name=""></div>
+                    <input type="text" name="" style="width:50px;" v-model="percent" @keydown.69.prevent>%正しかったら</div>
+                <div>教師の言動：<input type="text" name="" v-model="teacher_behavior"></div>
+                <div name="error_text" v-html="percent_error"></div>
+                <div name="error_text" v-html="teacher_behavior_error"></div>
             </div>
-            <div style="display:inline-block;">
+            <div style="display:inline-block;vertical-align: top;">
                 <br>
                 <div>音声的特徴：
-                    <input type="checkbox" name="">
-                    <select name="">
-                        <option v-for="item in pfeatures" value="">{{item}}</option>
+                    <input name="voR_s" type="checkbox" v-bind:id="pfeatures_checkbox_id" v-model="pfeatures_checkbox_check" v-on:click="click_check_box">
+                    <select name="voR_s" v-on:change="select_option">
+                        <option v-for="item in pfeatures" v-bind:value="JSON.stringify(item)">{{item.feature}}</option>
                     </select>
                 </div>
                 <div>画像的特徴：
-                    <input type="checkbox" name="">
-                    <select name="">
-                        <option v-for="item in ifeatures" value="">{{item}}</option>
+                    <input name="imR_s" type="checkbox" v-bind:id="ifeatures_checkbox_id" v-model="ifeatures_checkbox_check" v-on:click="click_check_box">
+                    <select name="imR_s" v-on:change="select_option">
+                        <option v-for="item in ifeatures" v-bind:value="JSON.stringify(item)">{{item.feature}}</option>
                     </select>
                 </div>
                 <div>映像的特徴：
-                    <input type="checkbox" name="">
-                    <select name="">
-                        <option v-for="item in vfeatures" value="">{{item}}</option>
+                    <input name="viR_s" type="checkbox" v-bind:id="vfeatures_checkbox_id" v-model="vfeatures_checkbox_check" v-on:click="click_check_box">
+                    <select name="viR_s" v-on:change="select_option">
+                        <option v-for="item in vfeatures" v-bind:value="JSON.stringify(item)">{{item.feature}}</option>
                     </select>
                 </div>
                 <br>
                 <div>ロボットの動作：
-                    <select name="">
-                        <option v-for="item in rmovement" value="">{{item}}</option>
+                    <select name="roM_s" v-on:change="select_option">
+                        <option v-for="item in rmovement" v-bind:value="JSON.stringify(item)">{{item.action}}</option>
                     </select>
                 </div>
             </div>
+            <div>
+                <button v-on:click="click_post_button">送信</button>
+            </div>
         </div>
     </body>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/lib/axios.js"></script>
+    <script src="js/lib/vue.js"></script>
     <!--↑開発バージョンのため変える
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="js/lib/axios.min.js"></script>
+    <script src="js/lib/vue.min.js"></script>
     -->
-    <script src="js/read_rules_from_json.js"></script>
+    <script src="js/main_create_form.js"></script>
 </html>

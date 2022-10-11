@@ -1,0 +1,6 @@
+*{
+    margin:0;
+}
+div[name="error_text"] > p{
+    color: red;
+}
