@@ -9,6 +9,8 @@ function return_rules($id,$data){
     foreach($data["vfeatures_boolean_list"] as $key => $value){
         $data["vfeatures_boolean_list"][$key]=$value["boolean"];
     }
+    $teacher_behavior=$data["word_accurancy"]["teacher_behavior"];
+    unset($data["word_accurancy"]["teacher_behavior"]);
     $contents=array(
         "rule_id_" . $id=>array(
             "basic_information"=>array(
@@ -18,6 +20,7 @@ function return_rules($id,$data){
             ),
             "correct_answer_pattern"=>$data["correct_answer_pattern"],
             "word_accurancy"=>$data["word_accurancy"],
+            "teacher_behavior"=>array("word"=>$teacher_behavior),
             "voice_recognision"=>$data["pfeatures_boolean_list"],
             "image_recognision"=>$data["ifeatures_boolean_list"],
             "video_recognision"=>$data["vfeatures_boolean_list"],
