@@ -156,6 +156,7 @@ var create_form = new Vue({
                 }
             }
             else{
+                modified_percent=null
                 this.percent_error=null
             }
             if(this.word_accurancy_checkbox_check && !this.teacher_behavior){
