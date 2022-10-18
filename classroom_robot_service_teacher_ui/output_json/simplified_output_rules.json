@@ -2,23 +2,315 @@
     "rules": {
         "rule_id_1": {
             "basic_information": {
-                "student_situation": "落ち着きがない",
+                "student_situation": "導入語句の間違い",
                 "example_sentence": "I live in Japan.",
                 "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
             },
-            "correct_answer_pattern": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')",
+            "correct_answer_pattern": null,
             "word_accurancy": {
                 "wordAccurancy_id": "wordAccurancy_id_1",
-                "boolean": true,
+                "boolean": false,
                 "order": "先頭から",
-                "percent": 75,
-                "teacher_behavior": "素晴らしい"
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
             },
             "voice_recognision": {
                 "voiceRecognision_id_1": true,
-                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_2": true,
                 "voiceRecognision_id_3": true,
                 "voiceRecognision_id_4": true,
+                "voiceRecognision_id_5": true,
+                "voiceRecognision_id_101": true,
+                "voiceRecognision_id_102": true,
+                "voiceRecognision_id_103": true,
+                "voiceRecognision_id_104": true,
+                "voiceRecognision_id_201": true,
+                "voiceRecognision_id_202": true,
+                "voiceRecognision_id_203": false,
+                "voiceRecognision_id_204": false
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": false,
+                "imageRecognision_id_2": false,
+                "imageRecognision_id_3": false,
+                "imageRecognision_id_4": false,
+                "imageRecognision_id_101": false,
+                "imageRecognision_id_102": false
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
+                "videoRecognision_id_3": false,
+                "videoRecognision_id_4": false,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
+                "videoRecognision_id_10": false,
+                "videoRecognision_id_11": false
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_1",
+                "action": "間違い部分を読み上げる",
+                "type": "read"
+            }
+        },
+        "rule_id_2": {
+            "basic_information": {
+                "student_situation": "返答できない",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": null,
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": false,
+                "order": "先頭から",
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": false,
+                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_3": false,
+                "voiceRecognision_id_4": false,
+                "voiceRecognision_id_5": false,
+                "voiceRecognision_id_101": false,
+                "voiceRecognision_id_102": false,
+                "voiceRecognision_id_103": false,
+                "voiceRecognision_id_104": false,
+                "voiceRecognision_id_201": true,
+                "voiceRecognision_id_202": false,
+                "voiceRecognision_id_203": false,
+                "voiceRecognision_id_204": false
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": false,
+                "imageRecognision_id_2": false,
+                "imageRecognision_id_3": false,
+                "imageRecognision_id_4": false,
+                "imageRecognision_id_101": false,
+                "imageRecognision_id_102": false
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
+                "videoRecognision_id_3": false,
+                "videoRecognision_id_4": false,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
+                "videoRecognision_id_10": false,
+                "videoRecognision_id_11": false
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_2",
+                "action": "もう一度質問",
+                "type": "question"
+            }
+        },
+        "rule_id_3": {
+            "basic_information": {
+                "student_situation": "文章になっていない",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": null,
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": false,
+                "order": "先頭から",
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": false,
+                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_3": false,
+                "voiceRecognision_id_4": true,
+                "voiceRecognision_id_5": true,
+                "voiceRecognision_id_101": false,
+                "voiceRecognision_id_102": false,
+                "voiceRecognision_id_103": false,
+                "voiceRecognision_id_104": false,
+                "voiceRecognision_id_201": false,
+                "voiceRecognision_id_202": false,
+                "voiceRecognision_id_203": false,
+                "voiceRecognision_id_204": false
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": true,
+                "imageRecognision_id_2": true,
+                "imageRecognision_id_3": true,
+                "imageRecognision_id_4": false,
+                "imageRecognision_id_101": true,
+                "imageRecognision_id_102": false
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
+                "videoRecognision_id_3": false,
+                "videoRecognision_id_4": false,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
+                "videoRecognision_id_10": false,
+                "videoRecognision_id_11": false
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_3",
+                "action": "正しい文章を読み上げる",
+                "type": "read"
+            }
+        },
+        "rule_id_4": {
+            "basic_information": {
+                "student_situation": "理解できず返答できない",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": null,
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": false,
+                "order": "先頭から",
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": false,
+                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_3": false,
+                "voiceRecognision_id_4": false,
+                "voiceRecognision_id_5": false,
+                "voiceRecognision_id_101": false,
+                "voiceRecognision_id_102": false,
+                "voiceRecognision_id_103": false,
+                "voiceRecognision_id_104": false,
+                "voiceRecognision_id_201": false,
+                "voiceRecognision_id_202": false,
+                "voiceRecognision_id_203": true,
+                "voiceRecognision_id_204": false
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": false,
+                "imageRecognision_id_2": false,
+                "imageRecognision_id_3": false,
+                "imageRecognision_id_4": false,
+                "imageRecognision_id_101": false,
+                "imageRecognision_id_102": false
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
+                "videoRecognision_id_3": false,
+                "videoRecognision_id_4": false,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
+                "videoRecognision_id_10": false,
+                "videoRecognision_id_11": false
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_4",
+                "action": "例文を読み上げる",
+                "type": "read"
+            }
+        },
+        "rule_id_5": {
+            "basic_information": {
+                "student_situation": "聞き取れず返答できない",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": null,
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": false,
+                "order": "先頭から",
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": false,
+                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_3": false,
+                "voiceRecognision_id_4": false,
+                "voiceRecognision_id_5": false,
+                "voiceRecognision_id_101": false,
+                "voiceRecognision_id_102": false,
+                "voiceRecognision_id_103": false,
+                "voiceRecognision_id_104": false,
+                "voiceRecognision_id_201": false,
+                "voiceRecognision_id_202": false,
+                "voiceRecognision_id_203": true,
+                "voiceRecognision_id_204": false
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": false,
+                "imageRecognision_id_2": true,
+                "imageRecognision_id_3": false,
+                "imageRecognision_id_4": false,
+                "imageRecognision_id_101": false,
+                "imageRecognision_id_102": false
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
+                "videoRecognision_id_3": false,
+                "videoRecognision_id_4": false,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
+                "videoRecognision_id_10": false,
+                "videoRecognision_id_11": false
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_5",
+                "action": "もう一度ゆっくり質問する",
+                "type": "question"
+            }
+        },
+        "rule_id_6": {
+            "basic_information": {
+                "student_situation": "返答の仕方がわからない",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": null,
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": false,
+                "order": "先頭から",
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": false,
+                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_3": false,
+                "voiceRecognision_id_4": false,
                 "voiceRecognision_id_5": false,
                 "voiceRecognision_id_101": false,
                 "voiceRecognision_id_102": false,
@@ -31,29 +323,319 @@
             },
             "image_recognision": {
                 "imageRecognision_id_1": false,
-                "imageRecognision_id_2": true,
-                "imageRecognision_id_3": true,
+                "imageRecognision_id_2": false,
+                "imageRecognision_id_3": false,
+                "imageRecognision_id_4": false,
+                "imageRecognision_id_101": false,
+                "imageRecognision_id_102": false
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
+                "videoRecognision_id_3": false,
+                "videoRecognision_id_4": false,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
+                "videoRecognision_id_10": false,
+                "videoRecognision_id_11": false
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_4",
+                "action": "例文を読み上げる",
+                "type": "read"
+            }
+        },
+        "rule_id_7": {
+            "basic_information": {
+                "student_situation": "日本語で回答する",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": null,
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": false,
+                "order": "先頭から",
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": false,
+                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_3": false,
+                "voiceRecognision_id_4": false,
+                "voiceRecognision_id_5": false,
+                "voiceRecognision_id_101": false,
+                "voiceRecognision_id_102": false,
+                "voiceRecognision_id_103": false,
+                "voiceRecognision_id_104": true,
+                "voiceRecognision_id_201": false,
+                "voiceRecognision_id_202": false,
+                "voiceRecognision_id_203": false,
+                "voiceRecognision_id_204": false
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": false,
+                "imageRecognision_id_2": false,
+                "imageRecognision_id_3": false,
+                "imageRecognision_id_4": false,
+                "imageRecognision_id_101": false,
+                "imageRecognision_id_102": false
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
+                "videoRecognision_id_3": false,
+                "videoRecognision_id_4": false,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
+                "videoRecognision_id_10": false,
+                "videoRecognision_id_11": false
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_6",
+                "action": "英訳し読み上げる",
+                "type": "read"
+            }
+        },
+        "rule_id_8": {
+            "basic_information": {
+                "student_situation": "正しく認識できない",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": null,
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": false,
+                "order": "先頭から",
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": false,
+                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_3": false,
+                "voiceRecognision_id_4": false,
+                "voiceRecognision_id_5": false,
+                "voiceRecognision_id_101": false,
+                "voiceRecognision_id_102": false,
+                "voiceRecognision_id_103": false,
+                "voiceRecognision_id_104": false,
+                "voiceRecognision_id_201": false,
+                "voiceRecognision_id_202": false,
+                "voiceRecognision_id_203": true,
+                "voiceRecognision_id_204": false
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": false,
+                "imageRecognision_id_2": false,
+                "imageRecognision_id_3": false,
+                "imageRecognision_id_4": false,
+                "imageRecognision_id_101": false,
+                "imageRecognision_id_102": false
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
+                "videoRecognision_id_3": false,
+                "videoRecognision_id_4": false,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
+                "videoRecognision_id_10": false,
+                "videoRecognision_id_11": false
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_7",
+                "action": "もう一度発音してもらう",
+                "type": "listen"
+            }
+        },
+        "rule_id_9": {
+            "basic_information": {
+                "student_situation": "文章の途中で間が空く",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": null,
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": false,
+                "order": "先頭から",
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": false,
+                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_3": false,
+                "voiceRecognision_id_4": false,
+                "voiceRecognision_id_5": false,
+                "voiceRecognision_id_101": false,
+                "voiceRecognision_id_102": false,
+                "voiceRecognision_id_103": false,
+                "voiceRecognision_id_104": false,
+                "voiceRecognision_id_201": true,
+                "voiceRecognision_id_202": false,
+                "voiceRecognision_id_203": false,
+                "voiceRecognision_id_204": false
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": false,
+                "imageRecognision_id_2": false,
+                "imageRecognision_id_3": false,
+                "imageRecognision_id_4": false,
+                "imageRecognision_id_101": true,
+                "imageRecognision_id_102": false
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
+                "videoRecognision_id_3": false,
+                "videoRecognision_id_4": false,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
+                "videoRecognision_id_10": false,
+                "videoRecognision_id_11": false
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_7",
+                "action": "もう一度発音してもらう",
+                "type": "listen"
+            }
+        },
+        "rule_id_10": {
+            "basic_information": {
+                "student_situation": "悩んでいる",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": null,
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": false,
+                "order": "先頭から",
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": false,
+                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_3": false,
+                "voiceRecognision_id_4": false,
+                "voiceRecognision_id_5": false,
+                "voiceRecognision_id_101": false,
+                "voiceRecognision_id_102": false,
+                "voiceRecognision_id_103": false,
+                "voiceRecognision_id_104": false,
+                "voiceRecognision_id_201": false,
+                "voiceRecognision_id_202": false,
+                "voiceRecognision_id_203": false,
+                "voiceRecognision_id_204": false
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": true,
+                "imageRecognision_id_2": false,
+                "imageRecognision_id_3": false,
                 "imageRecognision_id_4": true,
+                "imageRecognision_id_101": false,
+                "imageRecognision_id_102": false
+            },
+            "video_recognision": {
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
+                "videoRecognision_id_3": false,
+                "videoRecognision_id_4": false,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
+                "videoRecognision_id_10": false,
+                "videoRecognision_id_11": false
+            },
+            "action": {
+                "roM_id": "robot_Movement_id_8",
+                "action": "わからないところを聞く",
+                "type": "question"
+            }
+        },
+        "rule_id_11": {
+            "basic_information": {
+                "student_situation": "よそ見している",
+                "example_sentence": "I live in Japan.",
+                "parsing_result": "('I', 'PRP')('live', 'VBP')('in', 'IN')('Japan.', 'NNP')"
+            },
+            "correct_answer_pattern": null,
+            "word_accurancy": {
+                "wordAccurancy_id": "wordAccurancy_id_1",
+                "boolean": false,
+                "order": "先頭から",
+                "percent": 0
+            },
+            "teacher_behavior": {
+                "word": null
+            },
+            "voice_recognision": {
+                "voiceRecognision_id_1": false,
+                "voiceRecognision_id_2": false,
+                "voiceRecognision_id_3": false,
+                "voiceRecognision_id_4": false,
+                "voiceRecognision_id_5": false,
+                "voiceRecognision_id_101": false,
+                "voiceRecognision_id_102": false,
+                "voiceRecognision_id_103": false,
+                "voiceRecognision_id_104": false,
+                "voiceRecognision_id_201": false,
+                "voiceRecognision_id_202": false,
+                "voiceRecognision_id_203": false,
+                "voiceRecognision_id_204": false
+            },
+            "image_recognision": {
+                "imageRecognision_id_1": false,
+                "imageRecognision_id_2": false,
+                "imageRecognision_id_3": false,
+                "imageRecognision_id_4": false,
                 "imageRecognision_id_101": false,
                 "imageRecognision_id_102": true
             },
             "video_recognision": {
-                "videoRecognision_id_1": true,
-                "videoRecognision_id_2": true,
+                "videoRecognision_id_1": false,
+                "videoRecognision_id_2": false,
                 "videoRecognision_id_3": false,
                 "videoRecognision_id_4": false,
-                "videoRecognision_id_5": true,
-                "videoRecognision_id_6": true,
-                "videoRecognision_id_7": true,
-                "videoRecognision_id_8": true,
-                "videoRecognision_id_9": true,
+                "videoRecognision_id_5": false,
+                "videoRecognision_id_6": false,
+                "videoRecognision_id_7": false,
+                "videoRecognision_id_8": false,
+                "videoRecognision_id_9": false,
                 "videoRecognision_id_10": false,
-                "videoRecognision_id_11": true
+                "videoRecognision_id_11": false
             },
             "action": {
-                "roM_id": "robot_Movement_id_1",
-                "action": "評価を返す",
-                "type": ""
+                "roM_id": "robot_Movement_id_9",
+                "action": "正面を向くよう注意する",
+                "type": "attention"
             }
         }
     }
