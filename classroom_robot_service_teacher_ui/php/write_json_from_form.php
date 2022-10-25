@@ -10,12 +10,16 @@ function return_rules($id,$data){
                 "parsing_result"=>$data["parsing_result"]
             ),
             "correct_answer_pattern"=>$data["correct_answer_pattern"],
-            "word_accurancy"=>$data["word_accurancy"],
-            "teacher_behavior"=>array("word"=>$teacher_behavior),
-            "voice_recognision"=>$data["pfeatures_boolean_list"],
-            "image_recognision"=>$data["ifeatures_boolean_list"],
-            "video_recognision"=>$data["vfeatures_boolean_list"],
-            "action"=>$data["rmovement"]
+            "when"=>array(
+                "word_accurancy"=>$data["word_accurancy"],
+                "voice_recognision"=>$data["pfeatures_boolean_list"],
+                "image_recognision"=>$data["ifeatures_boolean_list"],
+                "video_recognision"=>$data["vfeatures_boolean_list"]
+            ),
+            "then"=>array(
+                "teacher_behavior"=>array("word"=>$teacher_behavior),
+                "action"=>$data["rmovement"]
+            )
         )
     );
     $contents=array(
