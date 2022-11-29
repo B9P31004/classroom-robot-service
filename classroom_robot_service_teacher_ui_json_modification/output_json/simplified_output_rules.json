@@ -1,0 +1,193 @@
+{
+    "rules": [
+        {
+            "rule_id": 1,
+            "basic_information": {
+                "student_situation": "tuujou",
+                "example_sentence": "example",
+                "parsing_result": null
+            },
+            "correct_answer_pattern": null,
+            "when": {
+                "word_accurancy": {
+                    "id": 1,
+                    "boolean": false,
+                    "order": "先頭から",
+                    "percent": 0
+                },
+                "voice_recognision": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ],
+                "image_recognision": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ],
+                "video_recognision": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ]
+            },
+            "then": {
+                "teacher_behavior": {
+                    "word": null
+                },
+                "robot_action": {
+                    "id": 1,
+                    "action": "評価を返す",
+                    "type": ""
+                }
+            }
+        },
+        {
+            "rule_id": 2,
+            "basic_information": {
+                "student_situation": "tuujou",
+                "example_sentence": "example",
+                "parsing_result": null
+            },
+            "correct_answer_pattern": null,
+            "when": {
+                "word_accurancy": {
+                    "id": 1,
+                    "boolean": false,
+                    "order": "先頭から",
+                    "percent": 0
+                },
+                "voice_recognision": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ],
+                "image_recognision": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ],
+                "video_recognision": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ]
+            },
+            "then": {
+                "teacher_behavior": {
+                    "word": null
+                },
+                "robot_action": {
+                    "id": 1,
+                    "action": "評価を返す",
+                    "type": ""
+                }
+            }
+        },
+        {
+            "rule_id": 3,
+            "basic_information": {
+                "student_situation": "tuujou",
+                "example_sentence": "example",
+                "parsing_result": null
+            },
+            "correct_answer_pattern": null,
+            "when": {
+                "word_accurancy": {
+                    "id": 1,
+                    "boolean": false,
+                    "order": "先頭から",
+                    "percent": 0
+                },
+                "voice_recognision": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ],
+                "image_recognision": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ],
+                "video_recognision": [
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ]
+            },
+            "then": {
+                "teacher_behavior": {
+                    "word": null
+                },
+                "robot_action": {
+                    "id": 1,
+                    "action": "評価を返す",
+                    "type": ""
+                }
+            }
+        }
+    ]
+}
