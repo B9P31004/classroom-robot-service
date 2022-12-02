@@ -3,8 +3,8 @@
         {
             "rule_id": 1,
             "basic_information": {
-                "student_situation": "tuujou",
-                "example_sentence": "example",
+                "student_situation": "test",
+                "example_sentence": "I live in Japan.",
                 "parsing_result": null
             },
             "correct_answer_pattern": null,
@@ -15,7 +15,7 @@
                     "order": "先頭から",
                     "percent": 0
                 },
-                "voice_recognision": [
+                "voice_recognition": [
                     {
                         "id": 1,
                         "boolean": false,
@@ -24,31 +24,31 @@
                     },
                     {
                         "id": 2,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "固有名詞の数の不一致",
                         "type": "文法の誤り"
                     },
                     {
                         "id": 3,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "名詞の数の不一致",
                         "type": "文法の誤り"
                     },
                     {
                         "id": 4,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "単語抜け判定",
                         "type": "文法の誤り"
                     },
                     {
                         "id": 5,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "文章のみの判定",
                         "type": "文法の誤り"
                     },
                     {
                         "id": 101,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "固有名詞と名詞違い",
                         "type": "語彙の誤り"
                     },
@@ -95,7 +95,7 @@
                         "type": "発生の誤り"
                     }
                 ],
-                "image_recognision": [
+                "image_recognition": [
                     {
                         "id": 1,
                         "boolean": false,
@@ -104,19 +104,19 @@
                     },
                     {
                         "id": 2,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "首を傾げる",
                         "type": "顔の動作"
                     },
                     {
                         "id": 3,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "頭が揺れる",
                         "type": "顔の動作"
                     },
                     {
                         "id": 4,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "常に動いている",
                         "type": "顔の動作"
                     },
@@ -133,7 +133,7 @@
                         "type": "顔の向き"
                     }
                 ],
-                "video_recognision": [
+                "video_recognition": [
                     {
                         "id": 1,
                         "boolean": false,
@@ -142,13 +142,13 @@
                     },
                     {
                         "id": 2,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "頭が揺れる",
                         "type": ""
                     },
                     {
                         "id": 3,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "目を見開く",
                         "type": ""
                     },
@@ -160,7 +160,7 @@
                     },
                     {
                         "id": 5,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "頭が上下する",
                         "type": ""
                     },
@@ -207,8 +207,8 @@
                     "word": null
                 },
                 "robot_action": {
-                    "id": 1,
-                    "action": "評価を返す",
+                    "id": 2,
+                    "action": "右手を挙げる",
                     "type": ""
                 }
             }
@@ -216,19 +216,19 @@
         {
             "rule_id": 2,
             "basic_information": {
-                "student_situation": "tuujou",
-                "example_sentence": "example",
+                "student_situation": "test",
+                "example_sentence": "I live in Japan.",
                 "parsing_result": null
             },
             "correct_answer_pattern": null,
             "when": {
                 "word_accurancy": {
-                    "id": 1,
-                    "boolean": false,
-                    "order": "先頭から",
-                    "percent": 0
+                    "id": 2,
+                    "boolean": true,
+                    "order": "後ろから",
+                    "percent": 80
                 },
-                "voice_recognision": [
+                "voice_recognition": [
                     {
                         "id": 1,
                         "boolean": false,
@@ -237,31 +237,31 @@
                     },
                     {
                         "id": 2,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "固有名詞の数の不一致",
                         "type": "文法の誤り"
                     },
                     {
                         "id": 3,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "名詞の数の不一致",
                         "type": "文法の誤り"
                     },
                     {
                         "id": 4,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "単語抜け判定",
                         "type": "文法の誤り"
                     },
                     {
                         "id": 5,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "文章のみの判定",
                         "type": "文法の誤り"
                     },
                     {
                         "id": 101,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "固有名詞と名詞違い",
                         "type": "語彙の誤り"
                     },
@@ -308,7 +308,7 @@
                         "type": "発生の誤り"
                     }
                 ],
-                "image_recognision": [
+                "image_recognition": [
                     {
                         "id": 1,
                         "boolean": false,
@@ -317,19 +317,19 @@
                     },
                     {
                         "id": 2,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "首を傾げる",
                         "type": "顔の動作"
                     },
                     {
                         "id": 3,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "頭が揺れる",
                         "type": "顔の動作"
                     },
                     {
                         "id": 4,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "常に動いている",
                         "type": "顔の動作"
                     },
@@ -346,7 +346,7 @@
                         "type": "顔の向き"
                     }
                 ],
-                "video_recognision": [
+                "video_recognition": [
                     {
                         "id": 1,
                         "boolean": false,
@@ -355,13 +355,13 @@
                     },
                     {
                         "id": 2,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "頭が揺れる",
                         "type": ""
                     },
                     {
                         "id": 3,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "目を見開く",
                         "type": ""
                     },
@@ -373,7 +373,7 @@
                     },
                     {
                         "id": 5,
-                        "boolean": false,
+                        "boolean": true,
                         "feature": "頭が上下する",
                         "type": ""
                     },
@@ -417,224 +417,11 @@
             },
             "then": {
                 "teacher_behavior": {
-                    "word": null
+                    "word": "素晴らしい"
                 },
                 "robot_action": {
-                    "id": 1,
-                    "action": "評価を返す",
-                    "type": ""
-                }
-            }
-        },
-        {
-            "rule_id": 3,
-            "basic_information": {
-                "student_situation": "tuujou",
-                "example_sentence": "example",
-                "parsing_result": null
-            },
-            "correct_answer_pattern": null,
-            "when": {
-                "word_accurancy": {
-                    "id": 1,
-                    "boolean": false,
-                    "order": "先頭から",
-                    "percent": 0
-                },
-                "voice_recognision": [
-                    {
-                        "id": 1,
-                        "boolean": false,
-                        "feature": "動詞時制の不一致",
-                        "type": "文法の誤り"
-                    },
-                    {
-                        "id": 2,
-                        "boolean": false,
-                        "feature": "固有名詞の数の不一致",
-                        "type": "文法の誤り"
-                    },
-                    {
-                        "id": 3,
-                        "boolean": false,
-                        "feature": "名詞の数の不一致",
-                        "type": "文法の誤り"
-                    },
-                    {
-                        "id": 4,
-                        "boolean": false,
-                        "feature": "単語抜け判定",
-                        "type": "文法の誤り"
-                    },
-                    {
-                        "id": 5,
-                        "boolean": false,
-                        "feature": "文章のみの判定",
-                        "type": "文法の誤り"
-                    },
-                    {
-                        "id": 101,
-                        "boolean": false,
-                        "feature": "固有名詞と名詞違い",
-                        "type": "語彙の誤り"
-                    },
-                    {
-                        "id": 102,
-                        "boolean": false,
-                        "feature": "（一致すべき部分の）単語違い",
-                        "type": "語彙の誤り"
-                    },
-                    {
-                        "id": 103,
-                        "boolean": false,
-                        "feature": "POSタグ違い",
-                        "type": "語彙の誤り"
-                    },
-                    {
-                        "id": 104,
-                        "boolean": false,
-                        "feature": "日本語が検出された",
-                        "type": "語彙の誤り"
-                    },
-                    {
-                        "id": 201,
-                        "boolean": false,
-                        "feature": "間が空いている",
-                        "type": "発生の誤り"
-                    },
-                    {
-                        "id": 202,
-                        "boolean": false,
-                        "feature": "言い淀みが含まれる",
-                        "type": "発生の誤り"
-                    },
-                    {
-                        "id": 203,
-                        "boolean": false,
-                        "feature": "音声から認識される単語なし",
-                        "type": "発生の誤り"
-                    },
-                    {
-                        "id": 204,
-                        "boolean": false,
-                        "feature": "余計な単語が正解解答の後に入る",
-                        "type": "発生の誤り"
-                    }
-                ],
-                "image_recognision": [
-                    {
-                        "id": 1,
-                        "boolean": false,
-                        "feature": "動作の変化がない",
-                        "type": "顔の動作"
-                    },
-                    {
-                        "id": 2,
-                        "boolean": false,
-                        "feature": "首を傾げる",
-                        "type": "顔の動作"
-                    },
-                    {
-                        "id": 3,
-                        "boolean": false,
-                        "feature": "頭が揺れる",
-                        "type": "顔の動作"
-                    },
-                    {
-                        "id": 4,
-                        "boolean": false,
-                        "feature": "常に動いている",
-                        "type": "顔の動作"
-                    },
-                    {
-                        "id": 101,
-                        "boolean": false,
-                        "feature": "正面を向いている",
-                        "type": "顔の向き"
-                    },
-                    {
-                        "id": 102,
-                        "boolean": false,
-                        "feature": "正面を向いていない",
-                        "type": "顔の向き"
-                    }
-                ],
-                "video_recognision": [
-                    {
-                        "id": 1,
-                        "boolean": false,
-                        "feature": "目線が定まらない",
-                        "type": ""
-                    },
-                    {
-                        "id": 2,
-                        "boolean": false,
-                        "feature": "頭が揺れる",
-                        "type": ""
-                    },
-                    {
-                        "id": 3,
-                        "boolean": false,
-                        "feature": "目を見開く",
-                        "type": ""
-                    },
-                    {
-                        "id": 4,
-                        "boolean": false,
-                        "feature": "口元が上がる",
-                        "type": ""
-                    },
-                    {
-                        "id": 5,
-                        "boolean": false,
-                        "feature": "頭が上下する",
-                        "type": ""
-                    },
-                    {
-                        "id": 6,
-                        "boolean": false,
-                        "feature": "体が揺れる",
-                        "type": ""
-                    },
-                    {
-                        "id": 7,
-                        "boolean": false,
-                        "feature": "瞬きが多い",
-                        "type": ""
-                    },
-                    {
-                        "id": 8,
-                        "boolean": false,
-                        "feature": "手が動く",
-                        "type": ""
-                    },
-                    {
-                        "id": 9,
-                        "boolean": false,
-                        "feature": "単語ごとに発音身振り付き",
-                        "type": ""
-                    },
-                    {
-                        "id": 10,
-                        "boolean": false,
-                        "feature": "固まる",
-                        "type": ""
-                    },
-                    {
-                        "id": 11,
-                        "boolean": false,
-                        "feature": "落ち着きがない",
-                        "type": ""
-                    }
-                ]
-            },
-            "then": {
-                "teacher_behavior": {
-                    "word": null
-                },
-                "robot_action": {
-                    "id": 1,
-                    "action": "評価を返す",
+                    "id": 2,
+                    "action": "右手を挙げる",
                     "type": ""
                 }
             }

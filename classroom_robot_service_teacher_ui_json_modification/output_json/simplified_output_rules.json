@@ -3,8 +3,8 @@
         {
             "rule_id": 1,
             "basic_information": {
-                "student_situation": "tuujou",
-                "example_sentence": "example",
+                "student_situation": "test",
+                "example_sentence": "I live in Japan.",
                 "parsing_result": null
             },
             "correct_answer_pattern": null,
@@ -15,13 +15,13 @@
                     "order": "先頭から",
                     "percent": 0
                 },
-                "voice_recognision": [
+                "voice_recognition": [
                     false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
                     false,
                     false,
                     false,
@@ -30,20 +30,20 @@
                     false,
                     false
                 ],
-                "image_recognision": [
+                "image_recognition": [
                     false,
-                    false,
-                    false,
-                    false,
+                    true,
+                    true,
+                    true,
                     false,
                     false
                 ],
-                "video_recognision": [
+                "video_recognition": [
                     false,
+                    true,
+                    true,
                     false,
-                    false,
-                    false,
-                    false,
+                    true,
                     false,
                     false,
                     false,
@@ -57,8 +57,8 @@
                     "word": null
                 },
                 "robot_action": {
-                    "id": 1,
-                    "action": "評価を返す",
+                    "id": 2,
+                    "action": "右手を挙げる",
                     "type": ""
                 }
             }
@@ -66,25 +66,25 @@
         {
             "rule_id": 2,
             "basic_information": {
-                "student_situation": "tuujou",
-                "example_sentence": "example",
+                "student_situation": "test",
+                "example_sentence": "I live in Japan.",
                 "parsing_result": null
             },
             "correct_answer_pattern": null,
             "when": {
                 "word_accurancy": {
-                    "id": 1,
-                    "boolean": false,
-                    "order": "先頭から",
-                    "percent": 0
+                    "id": 2,
+                    "boolean": true,
+                    "order": "後ろから",
+                    "percent": 80
                 },
-                "voice_recognision": [
+                "voice_recognition": [
                     false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
                     false,
                     false,
                     false,
@@ -93,20 +93,20 @@
                     false,
                     false
                 ],
-                "image_recognision": [
+                "image_recognition": [
                     false,
-                    false,
-                    false,
-                    false,
+                    true,
+                    true,
+                    true,
                     false,
                     false
                 ],
-                "video_recognision": [
+                "video_recognition": [
                     false,
+                    true,
+                    true,
                     false,
-                    false,
-                    false,
-                    false,
+                    true,
                     false,
                     false,
                     false,
@@ -117,74 +117,11 @@
             },
             "then": {
                 "teacher_behavior": {
-                    "word": null
+                    "word": "素晴らしい"
                 },
                 "robot_action": {
-                    "id": 1,
-                    "action": "評価を返す",
-                    "type": ""
-                }
-            }
-        },
-        {
-            "rule_id": 3,
-            "basic_information": {
-                "student_situation": "tuujou",
-                "example_sentence": "example",
-                "parsing_result": null
-            },
-            "correct_answer_pattern": null,
-            "when": {
-                "word_accurancy": {
-                    "id": 1,
-                    "boolean": false,
-                    "order": "先頭から",
-                    "percent": 0
-                },
-                "voice_recognision": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ],
-                "image_recognision": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ],
-                "video_recognision": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
-            },
-            "then": {
-                "teacher_behavior": {
-                    "word": null
-                },
-                "robot_action": {
-                    "id": 1,
-                    "action": "評価を返す",
+                    "id": 2,
+                    "action": "右手を挙げる",
                     "type": ""
                 }
             }
