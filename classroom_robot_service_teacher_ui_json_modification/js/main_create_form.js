@@ -85,15 +85,16 @@ var create_form = new Vue({
                 this.word_accurancy_checkbox_id=JSON.parse(e.target.value).woA_id;
             }
             if(e.target.name=="voR_s"){
-                this.pfeatures_checkbox_id=e.target.selectedIndex;
+                console.log("a")
+                this.pfeatures_checkbox_id=e.target.selectedIndex+1;
                 this.pfeatures_checkbox_check=this.pfeatures_boolean_list[this.pfeatures_checkbox_id].boolean
             }
             else if(e.target.name=="imR_s"){
-                this.ifeatures_checkbox_id=e.target.selectedIndex;
+                this.ifeatures_checkbox_id=e.target.selectedIndex+1;
                 this.ifeatures_checkbox_check=this.ifeatures_boolean_list[this.ifeatures_checkbox_id].boolean
             }
             else if(e.target.name=="viR_s"){
-                this.vfeatures_checkbox_id=e.target.selectedIndex;
+                this.vfeatures_checkbox_id=e.target.selectedIndex+1;
                 this.vfeatures_checkbox_check=this.vfeatures_boolean_list[this.vfeatures_checkbox_id].boolean
             }
             else if(e.target.name=="roM_s"){
