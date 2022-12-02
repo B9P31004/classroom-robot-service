@@ -21,9 +21,9 @@ function return_rules($id,$data){
             "correct_answer_pattern"=>$data["correct_answer_pattern"],
             "when"=>array(
                 "word_accurancy"=>$data["word_accurancy"],
-                "voice_recognision"=>$data["pfeatures_boolean_list"],
-                "image_recognision"=>$data["ifeatures_boolean_list"],
-                "video_recognision"=>$data["vfeatures_boolean_list"]
+                "voice_recognition"=>$data["pfeatures_boolean_list"],
+                "image_recognition"=>$data["ifeatures_boolean_list"],
+                "video_recognition"=>$data["vfeatures_boolean_list"]
             ),
             "then"=>array(
                 "teacher_behavior"=>array("word"=>$teacher_behavior),
