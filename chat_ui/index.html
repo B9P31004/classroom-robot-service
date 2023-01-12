@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                チャット形式
+            </div>
+            <div id="contents" class="contents" v-html="contents"></div>
+            <div class="message_area">
+                <div class="error_message" v-show="error_ui">{{error_message}}</div>
+                <div v-show="textarea_ui">
+                    <textarea id="message" class="message" v-model="message"></textarea>
+                    <div class="textarea_button_area">
+                        <div class="textarea_button" v-on:click="click_send_message_button">送信</div>
+                    </div>
+                </div>
+                <div v-show="boolean_ui">
+                    <div class="boolean_button_area">
+                        <input id="boolean_true" type="radio" value="true"  v-model="label_boolean" v-on:change="change_boolean_button" v-on:click="click_boolean_button('true')"><label id="label_true" for="boolean_true" class="label">true</label>
+                        <input id="boolean_false" type="radio" value="false" v-model="label_boolean" v-on:change="change_boolean_button" v-on:click="click_boolean_button('false')"><label id="label_false" for="boolean_false" class="label">false</label>
+                    </div>
+                </div>
+                <div v-show="select_ui">
+                    <select class="select" v-model="select_item">
+                        <option v-for="(item,index) in select_list" v-bind:value="index">{{item.text}}</option>
+                    </select>
+                    <div class="select_button_area">
+                        <div class="select_button" v-on:click="click_select_button">決定</div>
+                    </div>
+                </div>
+                <div v-show="start_ui">
+                    <div class="start_button_area">
+                        <div class="start_button" v-on:click="click_start_button">開始</div>
+                    </div>
+                </div>
+                <div v-show="end_ui">
+                    <div class="end_button_area">
+                        <div class="end_button" v-on:click="click_end_button">終了</div>
+                    </div>
+                </div>
+                <div v-show="pre_ui">
+                    <div class="pre_button_area">
+                        <div class="pre_button" v-on:click="click_pre_button">前に戻る</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <script src="js/lib/axios.js"></script>
+        <script src="js/lib/vue.js"></script>
+        <!--↑開発バージョンのため変える
+        <script src="js/lib/axios.min.js"></script>
+        <script src="js/lib/vue.min.js"></script>
+        -->
+        <script src="js/main.js"></script>
+    </footer>
+</html>

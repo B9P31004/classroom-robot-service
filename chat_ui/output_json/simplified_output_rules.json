@@ -1,0 +1,766 @@
+{
+    "rules": [
+        {
+            "rule_id": 1,
+            "basic_information": {
+                "student_situation": [
+                    {
+                        "id": 1,
+                        "text": "生徒の様子は？",
+                        "data": null
+                    }
+                ],
+                "example_sentence": [
+                    {
+                        "id": 1,
+                        "text": "例文",
+                        "data": null
+                    }
+                ],
+                "parsing_result": "a"
+            },
+            "correct_answer_pattern": [
+                {
+                    "id": 1,
+                    "text": "正答パターンの使用",
+                    "boolean": "false"
+                },
+                {
+                    "id": 2,
+                    "text": "正答パターン",
+                    "data": null
+                }
+            ],
+            "when": {
+                "word_accurancy": [
+                    {
+                        "id": 1,
+                        "text": "単語正誤の使用",
+                        "boolean": "false"
+                    },
+                    {
+                        "id": 2,
+                        "text": "どこから",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "先頭から"
+                            },
+                            {
+                                "id": 2,
+                                "text": "後ろから"
+                            }
+                        ],
+                        "selected": 0
+                    },
+                    {
+                        "id": 3,
+                        "text": "何％",
+                        "data": null
+                    }
+                ],
+                "voice_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "true",
+                    "true",
+                    "true"
+                ],
+                "image_recognition": [
+                    "true",
+                    "true",
+                    "true",
+                    "true",
+                    "true",
+                    "true"
+                ],
+                "video_recognition": [
+                    "true",
+                    "true",
+                    "true",
+                    "true",
+                    "true",
+                    "true",
+                    "true",
+                    "true",
+                    "true",
+                    "true",
+                    "true"
+                ]
+            },
+            "then": {
+                "teacher_behavior": {
+                    "word": [
+                        {
+                            "id": 1,
+                            "text": "教師の言動",
+                            "data": null
+                        }
+                    ]
+                },
+                "robot_action": [
+                    {
+                        "id": 1,
+                        "text": "ロボットの動作",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "評価を返す",
+                                "type": ""
+                            },
+                            {
+                                "id": 2,
+                                "text": "右手を挙げる",
+                                "type": ""
+                            }
+                        ],
+                        "selected": 1
+                    }
+                ]
+            }
+        },
+        {
+            "rule_id": 2,
+            "basic_information": {
+                "student_situation": [
+                    {
+                        "id": 1,
+                        "text": "生徒の様子は？",
+                        "data": null
+                    }
+                ],
+                "example_sentence": [
+                    {
+                        "id": 1,
+                        "text": "例文",
+                        "data": null
+                    }
+                ],
+                "parsing_result": "a"
+            },
+            "correct_answer_pattern": [
+                {
+                    "id": 1,
+                    "text": "正答パターンの使用",
+                    "boolean": "false"
+                },
+                {
+                    "id": 2,
+                    "text": "正答パターン",
+                    "data": null
+                }
+            ],
+            "when": {
+                "word_accurancy": [
+                    {
+                        "id": 1,
+                        "text": "単語正誤の使用",
+                        "boolean": "false"
+                    },
+                    {
+                        "id": 2,
+                        "text": "どこから",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "先頭から"
+                            },
+                            {
+                                "id": 2,
+                                "text": "後ろから"
+                            }
+                        ],
+                        "selected": 0
+                    },
+                    {
+                        "id": 3,
+                        "text": "何％",
+                        "data": null
+                    }
+                ],
+                "voice_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ],
+                "image_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ],
+                "video_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ]
+            },
+            "then": {
+                "teacher_behavior": {
+                    "word": [
+                        {
+                            "id": 1,
+                            "text": "教師の言動",
+                            "data": null
+                        }
+                    ]
+                },
+                "robot_action": [
+                    {
+                        "id": 1,
+                        "text": "ロボットの動作",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "評価を返す",
+                                "type": ""
+                            },
+                            {
+                                "id": 2,
+                                "text": "右手を挙げる",
+                                "type": ""
+                            }
+                        ],
+                        "selected": 0
+                    }
+                ]
+            }
+        },
+        {
+            "rule_id": 3,
+            "basic_information": {
+                "student_situation": [
+                    {
+                        "id": 1,
+                        "text": "生徒の様子は？",
+                        "data": "a"
+                    }
+                ],
+                "example_sentence": [
+                    {
+                        "id": 1,
+                        "text": "例文",
+                        "data": "a"
+                    }
+                ],
+                "parsing_result": "a"
+            },
+            "correct_answer_pattern": [
+                {
+                    "id": 1,
+                    "text": "正答パターンの使用",
+                    "skip_id": 2,
+                    "boolean": "false"
+                },
+                {
+                    "id": 2,
+                    "text": "正答パターン",
+                    "check_id": 1
+                }
+            ],
+            "when": {
+                "word_accurancy": [
+                    {
+                        "id": 1,
+                        "text": "単語正誤の使用",
+                        "skip_id": 3,
+                        "boolean": "false"
+                    },
+                    {
+                        "id": 2,
+                        "text": "どこから",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "先頭から"
+                            },
+                            {
+                                "id": 2,
+                                "text": "後ろから"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "text": "何％",
+                        "check_id": 1
+                    }
+                ],
+                "voice_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ],
+                "image_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ],
+                "video_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ]
+            },
+            "then": {
+                "teacher_behavior": {
+                    "word": [
+                        {
+                            "id": 1,
+                            "text": "教師の言動",
+                            "data": "a"
+                        }
+                    ]
+                },
+                "robot_action": [
+                    {
+                        "id": 1,
+                        "text": "ロボットの動作",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "評価を返す",
+                                "type": ""
+                            },
+                            {
+                                "id": 2,
+                                "text": "右手を挙げる",
+                                "type": ""
+                            }
+                        ],
+                        "selected": 0
+                    }
+                ]
+            }
+        },
+        {
+            "rule_id": 4,
+            "basic_information": {
+                "student_situation": [
+                    {
+                        "id": 1,
+                        "text": "生徒の様子は？",
+                        "data": "a"
+                    }
+                ],
+                "example_sentence": [
+                    {
+                        "id": 1,
+                        "text": "例文",
+                        "data": "a"
+                    }
+                ],
+                "parsing_result": null
+            },
+            "correct_answer_pattern": [
+                {
+                    "id": 1,
+                    "text": "正答パターンの使用",
+                    "skip_id": 2,
+                    "boolean": "false"
+                },
+                {
+                    "id": 2,
+                    "text": "正答パターン",
+                    "check_id": 1
+                }
+            ],
+            "when": {
+                "word_accurancy": [
+                    {
+                        "id": 1,
+                        "text": "単語正誤の使用",
+                        "skip_id": 3,
+                        "boolean": "false"
+                    },
+                    {
+                        "id": 2,
+                        "text": "どこから",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "先頭から"
+                            },
+                            {
+                                "id": 2,
+                                "text": "後ろから"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "text": "何％",
+                        "check_id": 1
+                    }
+                ],
+                "voice_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ],
+                "image_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ],
+                "video_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ]
+            },
+            "then": {
+                "teacher_behavior": {
+                    "word": [
+                        {
+                            "id": 1,
+                            "text": "教師の言動",
+                            "data": "a"
+                        }
+                    ]
+                },
+                "robot_action": [
+                    {
+                        "id": 1,
+                        "text": "ロボットの動作",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "評価を返す",
+                                "type": ""
+                            },
+                            {
+                                "id": 2,
+                                "text": "右手を挙げる",
+                                "type": ""
+                            }
+                        ],
+                        "selected": 0
+                    }
+                ]
+            }
+        },
+        {
+            "rule_id": 5,
+            "basic_information": {
+                "student_situation": [
+                    {
+                        "id": 1,
+                        "text": "生徒の様子は？",
+                        "data": "a"
+                    }
+                ],
+                "example_sentence": [
+                    {
+                        "id": 1,
+                        "text": "例文",
+                        "data": "a"
+                    }
+                ],
+                "parsing_result": null
+            },
+            "correct_answer_pattern": [
+                {
+                    "id": 1,
+                    "text": "正答パターンの使用",
+                    "boolean": "false"
+                },
+                {
+                    "id": 2,
+                    "text": "正答パターン",
+                    "check_id": 1
+                }
+            ],
+            "when": {
+                "word_accurancy": [
+                    {
+                        "id": 1,
+                        "text": "単語正誤の使用",
+                        "boolean": "false"
+                    },
+                    {
+                        "id": 2,
+                        "text": "どこから",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "先頭から"
+                            },
+                            {
+                                "id": 2,
+                                "text": "後ろから"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "text": "何％",
+                        "check_id": 1
+                    }
+                ],
+                "voice_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ],
+                "image_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ],
+                "video_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ]
+            },
+            "then": {
+                "teacher_behavior": {
+                    "word": [
+                        {
+                            "id": 1,
+                            "text": "教師の言動",
+                            "data": "a"
+                        }
+                    ]
+                },
+                "robot_action": [
+                    {
+                        "id": 1,
+                        "text": "ロボットの動作",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "評価を返す",
+                                "type": ""
+                            },
+                            {
+                                "id": 2,
+                                "text": "右手を挙げる",
+                                "type": ""
+                            }
+                        ],
+                        "selected": 0
+                    }
+                ]
+            }
+        },
+        {
+            "rule_id": 6,
+            "basic_information": {
+                "student_situation": [
+                    {
+                        "id": 1,
+                        "text": "生徒の様子は？",
+                        "data": "a"
+                    }
+                ],
+                "example_sentence": [
+                    {
+                        "id": 1,
+                        "text": "例文",
+                        "data": "a"
+                    }
+                ],
+                "parsing_result": null
+            },
+            "correct_answer_pattern": [
+                {
+                    "id": 1,
+                    "text": "正答パターンの使用",
+                    "boolean": "false"
+                },
+                {
+                    "id": 2,
+                    "text": "正答パターン",
+                    "check_id": 1
+                }
+            ],
+            "when": {
+                "word_accurancy": [
+                    {
+                        "id": 1,
+                        "text": "単語正誤の使用",
+                        "boolean": "false"
+                    },
+                    {
+                        "id": 2,
+                        "text": "どこから",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "先頭から"
+                            },
+                            {
+                                "id": 2,
+                                "text": "後ろから"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "text": "何％",
+                        "check_id": 1
+                    }
+                ],
+                "voice_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ],
+                "image_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ],
+                "video_recognition": [
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false",
+                    "false"
+                ]
+            },
+            "then": {
+                "teacher_behavior": {
+                    "word": [
+                        {
+                            "id": 1,
+                            "text": "教師の言動",
+                            "data": "a"
+                        }
+                    ]
+                },
+                "robot_action": [
+                    {
+                        "id": 1,
+                        "text": "ロボットの動作",
+                        "select": [
+                            {
+                                "id": 1,
+                                "text": "評価を返す",
+                                "type": ""
+                            },
+                            {
+                                "id": 2,
+                                "text": "右手を挙げる",
+                                "type": ""
+                            }
+                        ],
+                        "selected": 0
+                    }
+                ]
+            }
+        }
+    ]
+}
